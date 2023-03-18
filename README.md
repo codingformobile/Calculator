@@ -12,7 +12,7 @@
 
 # About
 
-Simple calculator with addition, subtraction, multiplication, division and percent
+Simple calculator based on a [tutorial on Youtube](https://youtu.be/lTyyNpY7hy0) from the channel "Coding for Mobile" 
 
 
 
