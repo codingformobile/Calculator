@@ -69,6 +69,10 @@ class MainActivity : AppCompatActivity() {
             input.text = addToInputText("+")
         }
 
+        button_percent.setOnClickListener {
+            input.text = addToInputText("%")
+        }
+
         button_equals.setOnClickListener {
             showResult()
         }
@@ -81,6 +85,8 @@ class MainActivity : AppCompatActivity() {
     private fun getInputExpression(): String {
         var expression = input.text.replace(Regex("÷"), "/")
         expression = expression.replace(Regex("×"), "*")
+        expression = expression.replace(Regex("%"), "/100")
+
         return expression
     }
 
